@@ -79,5 +79,5 @@ The Nutrition Management System is a Java-based application designed for dietiti
 Note: Patient IDs and Diet Plan IDs are used to associate patients with their respective diet plans. Ensure that IDs are unique to avoid conflicts.
 
 ## Author
-Juan Diego Henao Quintero
-Valntina Galvis Nieto
+Juan Diego Henao Quintero -
+Valentina Galvis Nieto
