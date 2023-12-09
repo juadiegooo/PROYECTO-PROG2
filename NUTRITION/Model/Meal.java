@@ -15,11 +15,7 @@ public class Meal {
         this.timeOfDay = timeOfDay;
     }
 
-    // Getter methods here
-
     public String toCsvString() {
         return codePatient + "," + name + "," + macronutrients + "," + calories + "," + timeOfDay;
     }
 }
-
-
