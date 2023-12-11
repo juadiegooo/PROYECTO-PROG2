@@ -1,0 +1,35 @@
+Sistema de Gestión de Dietas para Pacientes
+Para iniciar con el proyecto planteamos las funcionalidades generales que debe 
+cumplir el programa para tener claros los objetivos, los cuales dividimos por partes
+
+    •	Empezando por lo general, se diseñó un modelo de objetos que incluye las 
+        clases: Dietplan, Dietitian, Meal, Pafient e incluimos otras dos para trabajar 
+        la funcionalidad de los archivos csv, llamadas CsvHandler y ConsoleUi.
+
+    •	Para cada clase creamos sus respectivos atributos según las indicaciones del 
+        proyecto planteado. Un problema presentado fue la confusión de los atributos 
+        de la clase Meal con la clase DietPlan, ya que los macronutrientes y calorías 
+        están presentes en ambas clases, por tanto fue complicado distinguir a la hora 
+        de implementarlos, lo solucionamos entendiendo la función de cada uno en cada 
+        clase. y asignándoles diferente nombre
+
+    •	En la creación de los métodos para guardar y leer datos en los archivos csv, 
+        se nos complicó la reutilización de dichos métodos ya trabajaban con un solo 
+        1 archivo, y no con varios simultáneamente, por lo que optamos por colocar los 
+        métodos en una clase aparte llamada CsvHandler
+
+    •	Organizamos el sistema para que el nutricionista sea quien ingrese ó se registre, 
+        esto por medio de menús enumerados los cuales daban las opciones a ejecutar. un 
+        problema que tuvimos fue que el menú redirecciona el sistema a hacer la misma tarea 
+        de ingresar o registrar al nutricionista. en lugar de empezar con la gestión de 
+        pacientes lo que no es lógicamente correcto según los objetivos planteados. Por 
+        tanto reorganizamos el código con un ciclo while que se sale cuando el nutricionista 
+        se registró ó se identificó con ID correctamente, o que se repita en caso de que no 
+        se encuentre por ID
+
+    •	Para consultar los datos de cada paciente, diseñamos el código de manera que ingresando 
+        por consola el ID del paciente. este muestre toda la información que tiene incluyendo 
+        datos personales y sobre su plan de dieta. El problema en este proceso fue el de la 
+        posición de cada dato guardado en el archivo csv, fue complicado ubicar la posición del 
+        ID a consultar. ya que no teníamos en cuenta que las posiciones se enumeran desde el 
+        cero, y no desde el uno
